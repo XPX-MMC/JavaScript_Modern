@@ -1,0 +1,20 @@
+{
+  "name": "javascript-modern-js-for-react-devs",
+  "version": "1.0.0",
+  "description": "Describes modern JavaScript with a focus on frontend React development.  Assignments are located [here](./assignments.md).",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mburolla/javascript-modern-js-for-react-devs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mburolla/javascript-modern-js-for-react-devs/issues"
+  },
+  "homepage": "https://gitlab.com/mburolla/javascript-modern-js-for-react-devs#readme"
+}
