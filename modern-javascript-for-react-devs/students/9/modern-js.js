@@ -7,7 +7,7 @@
 //
 
 const displayResults = (personList, count) => {
-    var count = 0;
+    count = 0;
     count = personList.length;
     console.table(personList);
     console.log = ("There are " + count + " people in the list.");
