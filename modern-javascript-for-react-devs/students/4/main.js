@@ -65,14 +65,18 @@ const ex3 = () => {
 
 // ex4
 const palindrome = (str) => {
-  let leftPointer = 0;
-  let rightPointer = str.length - 1;
-  
+  for (let i = 0; i < Math.floor(str.length); i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 const ex4 = () => {
   console.log(palindrome("radar"));
   console.log(palindrome("month"));
+  console.log(palindrome("racecar"));
 };
 ex4();
 
