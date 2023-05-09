@@ -31,7 +31,11 @@ const countNumbers = (array) => {
     
     return retval;
 }
+// test cases for ex.1
 
+array1 = ["6", "valerie", false, 5, 3]
+array2 = [6, "sky","sun", 5, "3"]
+array3 = ["valerie", true, 5, "3"]
 
 const main = async () => {
     ex1();
