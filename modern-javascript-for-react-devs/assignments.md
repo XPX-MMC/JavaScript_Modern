@@ -6,8 +6,7 @@ Modernize [this](./modern-js.js) JavaScript file.  Replace the legacy functions 
 
 ## Instructions for 1 - 14
 1. Create a new branch (dev-XX-ex1) on your fork. (replace "XX" with your initials)
-2. Create a file for each Ex. inside your student # folder.
-3. Complete exercise.
+3. Complete exercises in the "main.js" file inside your folder.
 4. Come up with test cases (1-3) and see if your solution works.
 5. Commit and push to your branch. 
 6. Submit a PR (to the DEV branch on YOUR FORK)
