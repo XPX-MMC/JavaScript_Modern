@@ -26,7 +26,7 @@ const getData = (tableName) =>{
 }
 
 const main = () => {
-  var table = "person";
+   var table = "person";
   var personList = getData(table);
   personList.sort(function(a,b){return a.age - b.age});
   displayResults(personList);
