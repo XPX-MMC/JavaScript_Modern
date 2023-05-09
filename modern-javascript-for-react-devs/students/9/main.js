@@ -30,7 +30,6 @@ const countNumbers = (array) => {
     return numberCounter;
 }
 
-
 const main = async () => {
     ex1();
 }
