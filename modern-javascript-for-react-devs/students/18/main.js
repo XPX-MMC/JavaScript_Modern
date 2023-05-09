@@ -1,7 +1,7 @@
 //
 // File: main.js
-// Date: 5/24/2022
-// 
+// Date: 5/09/2023
+//
 
 const ex1 = () => {
 	const countNumbers = (array) => {
@@ -27,7 +27,6 @@ const ex2 = () => {
 const ex3 = () => {
 	// TODO...-xg-ex1
 };
-
 
 // Call your exercise Functions here------------------------------------
 
