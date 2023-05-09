@@ -35,7 +35,7 @@ Output:
 ```
 
 ## Ex. 3
-Create an arrow function called `interleave` that accepts two arrays and interleave them.  The function returns the following error string if the two arrays have a different length:  `ERROR: Array length mismatch`
+Create an arrow function called `interleave` that accepts two arrays and interleaves them.  The function returns the following error string if the two arrays have a different length:  `ERROR: Array length mismatch`
 
 Usage #1:
 ```
