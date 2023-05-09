@@ -3,6 +3,19 @@
 // Date: 5/24/2022
 // 
 
+
+const countNumbers = (array) => {
+     array = [1, '2', 3, 'test', 1.2];
+    let numberCounter = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof(array[i]) === 'number') numberCounter++;
+    }
+    return numberCounter;
+    // console.log(countNumbers(array));
+}
+
+
+
 const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2];
     console.log(countNumbers(array));
@@ -20,11 +33,11 @@ const ex3 = () => {
 // Your functions here...
 //
 
-const countNumbers = (array) => {
-    let retval = 0;
-    // TODO...
-    return retval;
-}
+// const countNumbers = (array) => {
+//     let retval = 0;
+//     // TODO...
+//     return retval;
+// }
 
 const main = async () => {
     ex1();
