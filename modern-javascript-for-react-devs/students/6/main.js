@@ -8,7 +8,7 @@
 //Exercice 0:
 
 const ex1 = () => {
-    const array = [1, '2', 3, 'test', 1.2];
+    const array = [1, '2', 3, 'test', 1.2,"5"];
     console.log(countNumbers(array));
 }
 
