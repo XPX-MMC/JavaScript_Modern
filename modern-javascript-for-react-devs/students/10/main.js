@@ -4,7 +4,8 @@
 // 
 
 const ex1 = () => {
-    const array = [1, '2', 3, 'test', 1.2];
+    const array = [1, 2 , 4, 5, '2', 3, 'test', 5.7, 1.2];
+   // const array = [1, '2', 3, 'test', 1.2];
     console.log(countNumbers(array));
     
 }
@@ -21,12 +22,25 @@ const ex3 = () => {
 // Your functions here...
 //
 
-const countNumbers = (array) => {
+const countNumbers = (array) => 
+{
     let retval = 0;
-    // TODO...
+    let i = 0;
+    //return length of array
+    while( i < array.length)
+    {
+        if (typeof array[i] == 'number')
+        {
+            retval++;
+            i++;
+            //console.log(retval)
+            //console.log(i)
+        }
+       else
+          i++;
+    }
     return retval;
 }
-
 const main = async () => {
     ex1();
 }
