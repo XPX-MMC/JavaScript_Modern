@@ -10,15 +10,21 @@ const ex1 = () => {
 
 // test cases for ex.1
 
-array1 = ["6", "valerie", false, 5, 3];
-array2 = [6, "sky", "sun", 5, "3"];
-array3 = ["valerie", true, 5, "3"];
+// array1 = ["6", "valerie", false, 5, 3];
+// array2 = [6, "sky", "sun", 5, "3"];
+// array3 = ["valerie", true, 5, "3"];
 
 const ex2 = () => {
-  const array = [12, 55, 2, 22, 11];
+  const array = [5, 100, 8, 1, -91];
   console.log(minNumber(array));
   
 };
+
+// test cases for ex.1
+
+// array1 = [5, 100, 8, 1, -91]
+// array2 = [200, 1500, 3, 10];
+// array3 = [90, 50, 4, 70];
 
 const ex3 = () => {
   // TODO...
@@ -47,7 +53,7 @@ const minNumber = (array) => {
 
     if (i == 0) 
       smallestNumber = array[0];
-      
+
     else if (array[i] < smallestNumber) 
       smallestNumber = array[i];
   }
