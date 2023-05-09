@@ -9,7 +9,7 @@ Modernize [this](./modern-js.js) JavaScript file.  Replace the legacy functions 
 3. Complete exercises in the "main.js" file inside your folder.
 4. Come up with test cases (1-3) and see if your solution works.
 5. Commit and push to your branch. 
-6. Submit a PR (to the DEV branch on YOUR FORK)
+6. Submit a PR (to the MAIN branch on YOUR FORK)
 
 ## Ex. 1
 Create an arrow function called `countNumbers` that takes an array and
