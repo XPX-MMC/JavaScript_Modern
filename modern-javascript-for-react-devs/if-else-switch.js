@@ -3,12 +3,17 @@
 // Date: 5/24/2022
 // Desc: 
 //
+let name = 'Richard';
+let company = 'PiedPiper';
 
 const ifElse = () => {
     let a = 1
     if (a == 1) {
         console.log('It is equal')
     }
+
+    // if (a == 5) console.log(5)
+    // else return undefined;
 
     if (a == 1) {
         console.log('here')
@@ -25,20 +30,22 @@ const ifElse = () => {
     }
 }
 
-const switchExample = () => {
-    let name = "joey"
+const switchExample = (name) => {
+    // let name = "Joey"
 
     switch(name) {
-        case "Joe":
-          console.log("Hello Joe");
+        case "Phoebe":
+          console.log("Hello Phoebe");
           break;
-        case "Fred":
-          console.log("Hello Fred");
+        case "Ross":
+          console.log("Hello Ross");
           break;
         default:
           console.log("I don't know you");
     }
 }
+
+switchExample('Chandler');
 
 //////////////////////////////////////////////////////////////////////////
 // Topics
@@ -46,3 +53,16 @@ const switchExample = () => {
 
 ifElse();
 //switchExample();
+
+
+let arr = ['a', 'b', 'c'];
+
+for (let i in arr) {
+console.log(i);
+// logs "0", "1", "2"
+}
+
+for (let o of arr) {
+console.log(o);
+// logs a, b, c
+}
