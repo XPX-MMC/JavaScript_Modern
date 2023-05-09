@@ -6,14 +6,14 @@
 //       - Replace var with let or const.
 //
 
-function displayResults(personList, count) {
+const displayResults = (personList, count)=> {
     var count = 0;
     count = personList.length;
     console.table(personList);
     console.log("There are " + count + " people in the list.");
 }
 
-function getData(tableName) {
+const getData = (tableName) =>{
   var retval = "No Data";
   if (tableName == "person") {
     retval = [
@@ -25,7 +25,7 @@ function getData(tableName) {
   return retval;
 }
 
-function main() {
+const main = () => {
   var table = "person";
   var personList = getData(table);
   personList.sort(function(a,b){return a.age - b.age});
