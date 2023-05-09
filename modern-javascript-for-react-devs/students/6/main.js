@@ -1,7 +1,12 @@
 //
 // File: main.js
-// Date: 5/24/2022
-// 
+// Date: 5/9/203
+// Imane Allay
+
+//_______________________________________________________
+
+//Exercice 0:
+//The exercice 0 content is in the modern-js file
 
 const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2];
@@ -16,15 +21,26 @@ const ex3 = () => {
     // TODO...
 }
 
-//
-// Your functions here...
-//
+
+//Your functions here...
+
+
+//exercice 1
 
 const countNumbers = (array) => {
-    let retval = 0;
-    // TODO...
-    return retval;
+    
+    
+    let c = 0;
+    for (let i=0;i<array.length;i++){
+        if (typeof(array[i])=='number'){
+            c++;
+        }
+        
+    }return c;
+    
 }
+
+
 
 const main = async () => {
     ex1();
