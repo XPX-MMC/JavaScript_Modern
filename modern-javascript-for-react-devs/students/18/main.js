@@ -1,41 +1,38 @@
 //
 // File: main.js
-// Date: 5/24/2022
-// 
+// Date: 5/09/2023
+//
 
 const ex1 = () => {
-    const array = [1, '2', 3, 'test', 1.2];
+	const countNumbers = (array) => {
+		let numCounter = 0;
 
-    const countNumbers = (array) => {
-        return array.length;
-    }
+		for (let i = 0; i < array.length; i++) {
+			if (typeof array[i] == 'number') {
+				numCounter++;
+			}
+		}
+		return numCounter;
+	};
 
-    console.log(countNumbers(array));
-}
+	const testCaseArray = [1, '2', 3, 'test', 1.2];
+
+	console.log(countNumbers(testCaseArray));
+};
 
 const ex2 = () => {
-    // TODO...
-    
-}
+	// TODO...
+};
 
 const ex3 = () => {
-    // TODO...-xg-ex1
+	// TODO...-xg-ex1
+};
 
-    
-}
 
-//
-// Your functions here...
-//
-
-const countNumbers = (array) => {
-    let retval = 0;
-    // TODO...
-    return retval;
-}
+// Call your exercise Functions here------------------------------------
 
 const main = async () => {
-    ex1();
-}
+	ex1();
+};
 
 main();
