@@ -21,13 +21,22 @@ const ex3 = () => {
 //
 
 const countNumbers = (array) => {
-    let retval = 0;
+    let numberCounter = 0;
     // TODO...
-    return retval;
-}
+    for (let i = 0; i < array.length; i++) {
 
+        if (typeof(array[i]) === 'number') numberCounter++;
+
+    }
+    return numberCounter;
+
+
+}
+// call your test cases
 const main = async () => {
     ex1();
 }
 
 main();
+
+
