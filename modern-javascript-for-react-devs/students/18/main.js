@@ -5,6 +5,11 @@
 
 const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2];
+
+    const countNumbers = (array) => {
+        return array.length;
+    }
+
     console.log(countNumbers(array));
 }
 
