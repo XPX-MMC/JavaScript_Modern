@@ -2,7 +2,15 @@
 
 ## Ex. 0
 Modernize [this](./modern-js.js) JavaScript file.  Replace the legacy functions with arrow functions and replace var with either let or const.  There's a function signature that isn't right. Can you find it and fix it?
-When you are finished, place this file in your student directory and submit a PR.
+- When you are finished, place this file in your student directory and submit a PR (to the DEV branch on YOUR FORK).
+
+## Instructions for 1 - 14
+1. Create a new branch (dev-XX-ex1) on your fork. (replace "XX" with your initials)
+2. Create a file for each Ex. inside your student # folder.
+3. Complete exercise.
+4. Come up with test cases (1-3) and see if your solution works.
+5. Commit and push to your branch. 
+6. Submit a PR (to the DEV branch on YOUR FORK)
 
 ## Ex. 1
 Create an arrow function called `countNumbers` that takes an array and
