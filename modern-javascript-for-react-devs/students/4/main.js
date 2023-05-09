@@ -14,13 +14,17 @@ const countNumbers = (arr) => {
   return result;
 };
 
-//test cases
-const array = [1, "2", 3, "test", 1.2];
-const array2 = [3, {}, 2, "string"];
-const array3 = [];
-console.log(countNumbers(array), countNumbers(array2), countNumbers(array3));
+// ex1 test cases
+const ex1 = () => {
+  const array = [1, "2", 3, "test", 1.2];
+  const array2 = [3, {}, 2, "string"];
+  const array3 = [];
+  console.log(countNumbers(array));
+  console.log(countNumbers(array2));
+  console.log(countNumbers(array3));
+};
 
-//ex2
+// ex2
 const minNumber = (arr) => {
   let min = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -30,35 +34,47 @@ const minNumber = (arr) => {
   }
   return min;
 };
-//test cases
-console.log(minNumber([3, 5, 1, 2]));
-console.log(minNumber([10, 5, 3, 0]));
-console.log(minNumber([3, -29, 1, -100]));
 
+// ex2 test cases
+const ex2 = () => {
+  console.log(minNumber([3, 5, 1, 2]));
+  console.log(minNumber([10, 5, 3, 0]));
+  console.log(minNumber([3, -29, 1, -100]));
+};
+
+// ex3
 const interleave = (arr1, arr2) => {
-  let result = [];
+  let result = "";
   if (arr1.length !== arr2.length) {
     return "ERROR: Array length mismatch";
   } else {
     for (let i = 0; i < arr1.length; i++) {
-      result.push(arr1[i]);
-      result.push(arr2[i]);
+      result += arr1[i];
+      result += arr2[i];
     }
   }
   return result;
 };
 
-console.log(interleave([1, 2, 3], [1, 2, 3]));
-
-//
-// Your functions here...
-//
-
-const countNumberss = (array) => {
-  let retval = 0;
-  // TODO...
-  return retval;
+// ex3 test cases
+const ex3 = () => {
+  console.log(interleave([1, 2, 3], [1, 2, 3]));
+  console.log(interleave([4, 2, 1], ["J", "I", "K"]));
+  console.log(interleave([21], [32, 1, 2]));
 };
+
+// ex4
+const palindrome = (str) => {
+  let leftPointer = 0;
+  let rightPointer = str.length - 1;
+  
+};
+
+const ex4 = () => {
+  console.log(palindrome("radar"));
+  console.log(palindrome("month"));
+};
+ex4();
 
 const main = async () => {};
 
