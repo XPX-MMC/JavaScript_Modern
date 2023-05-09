@@ -10,14 +10,14 @@
 
 let displayResults =(personList,count) => {
 
-    var count = 0;
+     count = 0;
     count = personList.length;
     console.table(personList);
     console.log("There are " + count + " people in the list.");
 }
 
 let getData =(tableName) =>{
-  var retval = "No Data";
+  let retval = "No Data";
   if (tableName == "person") {
     retval = [
       { firstName: "Alice", lastName: "Jones", age: 10 },
@@ -28,9 +28,9 @@ let getData =(tableName) =>{
   return retval;
 }
 
-const main=() =>{
-  var table = "person";
-  var personList = getData(table);
+let main=() =>{
+  let table = "person";
+  let personList = getData(table);
   personList.sort(function(a,b){return a.age - b.age});
   displayResults(personList);
 }
