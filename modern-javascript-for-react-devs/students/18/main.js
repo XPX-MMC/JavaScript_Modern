@@ -1,7 +1,7 @@
 //
 // File: main.js
-// Date: 5/09/2023
-//
+// Date: 5/24/2022
+// 
 
 const ex1 = () => {
 	const countNumbers = (array) => {
