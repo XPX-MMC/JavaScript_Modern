@@ -16,6 +16,9 @@ const ex2 = () => {
 
 const ex3 = () => {
     // TODO...
+    const array1 = [1, 2, 4, 5];
+    const array2 = ['a', 'b', 'c', 'd', 'e'];
+    console.log(interleave(array1, array2));
 }
 
 //
@@ -48,6 +51,12 @@ return min;
 
 }
 
+//Exercise 3
+
+const interLeave = (array) => {
+    let length = array[1]
+    for 
+}
 
 const main = async () => {
     //ex1();
