@@ -13,10 +13,17 @@ const ex2 = () =>
 {
     //const array1 = [12, 55, 2, 22, 11];
     //const array1 = [100, 99,76,12,59,3000, .5]
-    const array1 = [4000, 3000,59,.3,76,99, .2]
+    const array1 = [4000, 3000,59,.3,76,99, .2];
     console.log(minNumber(array1));
 }
 
+const ex3 = () => 
+{   const array1 = [1, 2];
+    const array2 = ['a', 'b', 'c', 'd', 'e'];
+    //const array1 = [1, 2, 3, 4, 5];
+    //const array2 = ['a', 'b', 'c', 'd', 'e'];
+    console.log(interleave(array1, array2));
+}
 const minNumber = (array) => 
 {
    let lowestNumber=array[0];
@@ -31,8 +38,23 @@ const minNumber = (array) =>
     return lowestNumber;
 }
 
-const ex3 = () => {
-    // TODO...
+const interleave = (array1,array2) => 
+{
+    let interleavedArray = [];
+    let n = array1.length;
+    let message = "";
+    for (let i=0; i < n; i++)
+    {
+        if (array1.length == array2.length)
+        {
+            interleavedArray.push(array1[i]);
+            interleavedArray.push(array2[i]);
+            message = interleavedArray.toString();
+        }
+        else
+            message = "ERROR: Array length mismatch."
+    }
+    return message;
 }
 
 
@@ -59,7 +81,7 @@ const countNumbers = (array) =>
     return retval;
 }
 const main = async () => {
-    ex2();
+    ex3();
 }
 
 main();
