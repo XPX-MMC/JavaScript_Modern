@@ -24,6 +24,13 @@ const ex3 = () =>
     //const array2 = ['a', 'b', 'c', 'd', 'e'];
     console.log(interleave(array1, array2));
 }
+
+const ex4 = () =>
+{
+    //console.log(palindrome('radar'));
+    console.log(palindrome('month'));
+}
+
 const minNumber = (array) => 
 {
    let lowestNumber=array[0];
@@ -56,6 +63,23 @@ const interleave = (array1,array2) =>
     }
     return message;
 }
+const palindrome = (passedString) => 
+{
+    let passedStringArray = passedString.split('');
+    //console.log(passedStringArray);
+    let reverseStringArray = passedString.split('').reverse('');
+    //console.log(reverseStringArray);
+    let bool = true;
+    for(let i = 0; i < passedStringArray.length; i++)
+    {
+     if (passedStringArray[i] != reverseStringArray[i])
+     {
+        bool = false
+     }
+     return bool;
+    }
+
+}
 
 
  //Your functions here...
@@ -81,7 +105,7 @@ const countNumbers = (array) =>
     return retval;
 }
 const main = async () => {
-    ex3();
+    ex4();
 }
 
 main();
