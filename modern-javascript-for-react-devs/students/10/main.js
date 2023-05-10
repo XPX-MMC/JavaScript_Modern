@@ -30,6 +30,22 @@ const ex4 = () =>
     //console.log(palindrome('radar'));
     console.log(palindrome('month'));
 }
+const ex5 = () =>
+{
+    let str = "Tommorrow is never Today Today is never Tommorrow Yesterday is never Today"
+    let word = "Today"
+    //let str = "Today is a this is a this is a test"
+    //let word = "this"
+    let returnedBackFromFunction = theNumberOfTimes(str, word);
+    console.log(word + " appears: " + returnedBackFromFunction + " times.");
+}
+
+
+
+
+
+
+
 
 const minNumber = (array) => 
 {
@@ -80,7 +96,30 @@ const palindrome = (passedString) =>
     }
 
 }
+const theNumberOfTimes = (passedString, word) =>
+{
+let taKeOutWhiteSpaces = passedString.toLowerCase().split(' ')
+let countWord = 0; 
+console.log(taKeOutWhiteSpaces);
+let i = 0;
+while (i < taKeOutWhiteSpaces.length)
+{
+    //console.log(taKeOutWhiteSpaces.length)
+    if (taKeOutWhiteSpaces[i] === word.toLowerCase())
+    {
+        //console.log(taKeOutWhiteSpaces[i], i)
+        countWord++;
+        i++;
+        //console.log(countWord);
+    }
+    else
+        i++;
+}
+//console.log(countWord)
+return countWord
 
+
+}
 
  //Your functions here...
 
@@ -105,7 +144,7 @@ const countNumbers = (array) =>
     return retval;
 }
 const main = async () => {
-    ex4();
+    ex5();
 }
 
 main();
