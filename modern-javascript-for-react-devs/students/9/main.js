@@ -16,9 +16,9 @@ const ex2 = () => {
 
 const ex3 = () => {
     // TODO...
-    const array1 = [1, 2, 4, 5];
+    const array1 = [1, 2, 3, 4, 5];
     const array2 = ['a', 'b', 'c', 'd', 'e'];
-    console.log(interleave(array1, array2));
+    console.log(interLeave(array1, array2));
 }
 
 //
@@ -52,17 +52,30 @@ return min;
 }
 
 //Exercise 3
+const interLeave = (array1, array2) => {
+    if (array1.length !== array2.length) {
+     return "ERROR: Array length mismatch"   
+    }
 
-const interLeave = (array) => {
-    let length = array[1]
-    for 
+    let  result = "";
+    for (let i = 0; i < array1.length; i++) {
+        result += array1[i];
+        result += array2[i];
+      }
+     
+    return result;
+    
 }
+  
 
 const main = async () => {
     //ex1();
-    ex2();
+   // ex2();
+      ex3();
 }
 
 
 main();
+
+
 
