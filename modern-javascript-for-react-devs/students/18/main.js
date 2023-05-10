@@ -21,7 +21,18 @@ const ex1 = () => {
 };
 
 const ex2 = () => {
-	// TODO...
+	const minNumber = (array) => {
+		let min = array[0];
+		array.forEach((element) => {
+			if (min > element) {
+				min = element;
+			}    
+		});
+        console.log(min);
+	};
+
+	const array = [12, 55, 2, 22, 11];
+	minNumber(array);
 };
 
 const ex3 = () => {
@@ -32,6 +43,7 @@ const ex3 = () => {
 
 const main = async () => {
 	ex1();
+	ex2();
 };
 
 main();
