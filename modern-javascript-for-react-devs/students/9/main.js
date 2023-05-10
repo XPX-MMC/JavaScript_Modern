@@ -31,18 +31,29 @@ const countNumbers = (array) => {
     console.log (typeof(array[i]));
    }
     return numberCounter;
-}
-
-const main = async () => {
-    ex1();
-}
+} 
 
 //Exercise2
 
-Const minNumber = (array) => {
-    let numberCounter = 0;
-    for 
+const minNumber = (array) => {
+    let min = array[0]
+    for (let i = 1; i < array.length; i++) {
+        if (min > array[i]) {
+           min = array[i] 
+        }
+
+    }
+    // done 
+return min;
+
+}
+
+
+const main = async () => {
+    //ex1();
+    ex2();
 }
 
 
 main();
+
