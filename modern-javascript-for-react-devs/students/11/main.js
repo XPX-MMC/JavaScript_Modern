@@ -19,7 +19,6 @@ const ex3 = () => {
 //
 // Your functions here...
 //
-
 const countNumbers = (array) => {
     let numberCounter = 0;
     // TODO...
