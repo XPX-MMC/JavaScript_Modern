@@ -21,8 +21,16 @@ const ex1 = () => {
     console.log(countNumbers(array));
 }
 
-const ex2 = () => {
+const array2 = [12, 55, 2, 22, 11];
+
+const ex2 = (minNumber) => {
     // TODO...
+    
+    let counter1 = 0;
+    for (let a = 0; a <array2.length; a++) {
+
+    }
+    console.log(minNumber(array2));
 }
 
 const ex3 = () => {
