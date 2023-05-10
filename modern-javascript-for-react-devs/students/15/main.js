@@ -5,33 +5,50 @@
 
 
 
-const ex1 = () => {
-    const array = [1, '2', 3, 'test', 1.2];
-    console.log(countNumbers(array));
-}
+// const ex1 = () => {
+//     const array = [1, '2', 3, 'test', 1.2];
+//     console.log(countNumbers(array));
+//}
 
-const ex2 = () => {
+//const ex2 = () => {
     // TODO...
-}
 
-const ex3 = () => {
-    // TODO...
-}
+   const arr = [12, 55, 2, 22, 11];
+   let min = arr[0]; 
+  
+   // console.log(min);
+ //}
+
+ const minNumber = (arr) => {
+    for (let i = 0; i < arr.length ; i++) { 
+    if (arr[i] < min){
+        min = arr[i];
+    
+    }
+       }
+       return min
+   }
+   console.log(minNumber(arr));
+// const ex3 = () => {
+//     // TODO...
+// }
 
 //
 // Your functions here...
 //
 
-const countNumbers = (array) => {
-    let numberCounter = 0;
-for (let i = 0; i < array.length ; i++) { 
-    if(typeof array[i] == 'number') numberCounter ++;
-    }
-    return numberCounter;
-}
+// const countNumbers = (array) => {
+//     let numberCounter = 0;
+// for (let i = 0; i < array.length ; i++) { 
+//     if(typeof array[i] == 'number') numberCounter ++;
+//     }
+//     return numberCounter;
+// }
 
-const main = async () => {
-    ex1();
-}
+// const main = async () => {
+//     ex1();
+//}
 
-main();
+
+
+// main();
