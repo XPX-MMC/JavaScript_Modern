@@ -12,7 +12,8 @@ const ex1 = () => {
 }
 
 const ex2 = () => {
-    // TODO...
+    const array = [12, 55, 2, 22, 11];
+    console.log(minNumber(array));
 }
 
 const ex3 = () => {
@@ -37,8 +38,27 @@ const countNumbers = (array) => {
     
 }
 
+//Exercice 2
+const minNumber =(array) => {
+    let index = 0;
+    let value = array[0];
+    for (let i=1; i<array.length; i++){
+        if (array[i] < value) {
+            value = array[i]; 
+            index = i;    
+        }
+    }
+    
+    return value;
+    
+
+}
+
 const main = async () => {
+    console.log("----------The number of numbers:-------------");
     ex1();
+    console.log("----------The minimum number:-------------");
+    ex2();
 }
 
 main();
