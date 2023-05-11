@@ -21,6 +21,10 @@ const ex3 = () => {
     console.log(interLeave(array1, array2));
 }
 
+const ex4 = () => {
+    //TODO...
+}
+
 //
 // Your functions here...
 //
@@ -31,8 +35,8 @@ const countNumbers = (array) => {
     // TODO...3
     for (let i = 0; i < array.length; i++) {
         if (typeof(array[i]) === 'number')  numberCounter++;
-    console.log (typeof(array[i]));
-   }
+        console.log (typeof(array[i]));
+    }
     return numberCounter;
 } 
 
@@ -42,39 +46,60 @@ const minNumber = (array) => {
     let min = array[0]
     for (let i = 1; i < array.length; i++) {
         if (min > array[i]) {
-           min = array[i] 
+            min = array[i] 
         }
-
+        
     }
     // done 
-return min;
-
+    return min;
+    
 }
 
 //Exercise 3
 const interLeave = (array1, array2) => {
     if (array1.length !== array2.length) {
-     return "ERROR: Array length mismatch"   
+        return "ERROR: Array length mismatch"   
     }
-
+    
     let  result = "";
     for (let i = 0; i < array1.length; i++) {
         result += array1[i];
         result += array2[i];
-      }
-     
+    }
+    
     return result;
     
 }
-  
+
+//Exercise 4
+const palindrome = (string) => {
+    const pal = string.length;
+    for (let i = 0; i < pal; i++) {
+        if (string[i] !== string[pal -1 -i]){
+            
+            return false}
+        }
+        
+        return true
+        
+    }
+    console.log(palindrome('radar'));
+    console.log(palindrome('month')); 
+
+
+//Exercise 5
+const 
 
 const main = async () => {
     //ex1();
-   // ex2();
-      ex3();
+    // ex2();
+    // ex3();
+    // ex4()
 }
 
 
+
+    
 main();
 
 
