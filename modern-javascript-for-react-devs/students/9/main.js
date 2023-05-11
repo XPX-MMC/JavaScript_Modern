@@ -29,6 +29,10 @@ const ex5 = () => {
 
 }
 
+const ex6 = () => {
+    
+
+}
 //
 // Your functions here...
 //
@@ -94,6 +98,23 @@ const palindrome = (string) => {
 
 let str = "today this is a this is a this is a test.";
 console.log(str.split("this").length -1);
+
+//Exercise 6
+const array = ['this', 'is', 'a', 'test', 'happy'];
+
+let longestWord = array[0];
+const longestString = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > array[0].length)
+            
+            longestWord = array[i]
+        
+    }
+
+    return longestWord
+}
+
+console.log(longestString(array));
 
 
 const main = async () => {
