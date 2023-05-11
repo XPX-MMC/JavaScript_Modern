@@ -120,3 +120,68 @@ console.log(interleave(array1, array2)); // Output: [1, 'a', 2, 'b', 3, 'c']
 // }
 
 main();
+
+
+// const palindrome(str) {
+// var len = str.length;
+// for (var i = 0; i < len/2; i++) {
+//   if (str[i] !== str[len - 1 - i]) {
+//       return false;
+//   }
+// }
+// return true;
+// }
+
+ 
+
+// Alternative answer* 
+const palindrome = (str) => {
+    const reversedStr = str.split('').reverse().join('');
+    return str === reversedStr;
+  };
+
+console.log(palindrome('radar'));
+console.log(palindrome('month'));
+
+
+
+
+// -------------------------------------------------
+// EX 5
+
+let str = "today this is a this is a this is a test."; 
+
+// Display the number of times the world "this" appears: 
+
+let wordCount = (str.match(/this/g) || []).length;
+console.log(wordCount);
+
+// output: 
+// this appears: 3 times
+
+console.log(str.split("this").length - 1);
+
+
+// -----------------------------------------------------
+// // EX 6
+// Create an arrow function named: longestString that returns the longest string fron an array of srtings
+
+
+let array = ['this', 'is', 'a', 'test', 'happy', 'Farjana', 'hello', 'Marty', 'Mississippi', 'McLennan'];
+
+const longestString = (array) => {
+
+let maxString = array[0].length; 
+let answer = array[0];
+
+for (let i = 1; i <array.length; i++) {
+     let max = array[i].length; 
+
+     if (max>maxString) {
+        answer = array[i]; 
+        maxString = max;
+     }
+}
+    return answer;
+}
+console.log(longestString(array));
