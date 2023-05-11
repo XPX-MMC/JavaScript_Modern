@@ -23,9 +23,39 @@ console.log(interleave(array1, array2));
 
 }
 
+const ex4 = () => { 
+ 
+let word = "radar"
+//let word2 = "month"
+
+console.log(palindrome('radar'));
+console.log(palindrome('month'));
+    
+
+}
 //
 // Your functions here...
 //
+const palindrome = (word) => {
+
+        for (let i=0; i < word.length; i++) 
+
+        if (word[i] == word [word.length-1-i]) {
+            return true
+        
+        } else {
+            return false
+
+        }
+
+
+
+    }
+
+    
+
+
+
 
 // function called interleave holding array1 and array 2
 const interleave = (array1, array2) => { 
@@ -78,7 +108,7 @@ const countNumbers = (array) => {
 }
 // call your test cases
 const main = async () => {
-    ex3();
+    ex4();
 }
 
 main();
