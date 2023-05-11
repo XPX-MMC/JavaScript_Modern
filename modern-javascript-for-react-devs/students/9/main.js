@@ -86,9 +86,7 @@ const palindrome = (string) => {
     console.log(palindrome('radar'));
     console.log(palindrome('month')); 
 
-
 //Exercise 5
-const 
 
 const main = async () => {
     //ex1();
