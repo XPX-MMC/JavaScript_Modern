@@ -102,7 +102,7 @@ const ex5 = () => {
 
 		console.log(testWord + ' appears: ' + counter + ' times');
 	};
-
+	//Test Case
 	countRepeats('today this is a this is a this is a test.');
 };
 
