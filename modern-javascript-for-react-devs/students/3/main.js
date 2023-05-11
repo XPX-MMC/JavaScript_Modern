@@ -74,7 +74,8 @@ const countNumbers = (arr) => {
 // const ex2 = () => {
 //     // TODO...
 // }
-
+// ------------------------------------------------------
+// EX2
 
 const minNumber = (x) => {
     let min = x[0];
@@ -89,25 +90,25 @@ const minNumber = (x) => {
   const array = [12, 55, 2, 22, 11, 1, 20, .5];
     console.log(minNumber(array));
 
-// const ex3 = () => {
-//     // TODO...
-// }
+// --------------------------------------------
+// EX 3
 
 //
-const interleave = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
+const interleave = (array1, array2) => {
+  if (array1.length !== array2.length) {
     return "ERROR: array length mismatch.";
   }
   const result = [];
-  for (let i = 0; i < arr1.length; i++) {
-    result.push(arr1[i], arr2[i]);
+  for (let i = 0; i < array1.length; i++) {
+    result.push(array1[i], array2[i]);
   }
   return result;
 };
 
 const array1 = [1, 2, 3];
 const array2 = ['a', 'b', 'c'];
-console.log(interleave(array1, array2)); // Output: [1, 'a', 2, 'b', 3, 'c']
+console.log(interleave(array1, array2)); 
+// Output: [1, 'a', 2, 'b', 3, 'c']
 
 // const countNumbers = (array) => {
 //     let retval = 0;
@@ -132,9 +133,9 @@ main();
 // return true;
 // }
 
- 
 
 // Alternative answer* 
+
 const palindrome = (str) => {
     const reversedStr = str.split('').reverse().join('');
     return str === reversedStr;
@@ -167,21 +168,54 @@ console.log(str.split("this").length - 1);
 // Create an arrow function named: longestString that returns the longest string fron an array of srtings
 
 
-let array = ['this', 'is', 'a', 'test', 'happy', 'Farjana', 'hello', 'Marty', 'Mississippi', 'McLennan'];
+let array1 = ['Valentina', 'is', 'a', 'test', 'happy', 'Farjana', 'hello', 'Marty', 'Mississippi', 'McLennan'];
 
-const longestString = (array) => {
+const longestString = (x) => {
 
-let maxString = array[0].length; 
-let answer = array[0];
+let maxString = x[0].length; 
+let answer = x[0];
 
-for (let i = 1; i <array.length; i++) {
-     let max = array[i].length; 
+for (let i = 1; i <x.length; i++) {
+     let max = x[i].length; 
 
      if (max>maxString) {
-        answer = array[i]; 
+        answer = x[i]; 
         maxString = max;
+        
      }
 }
     return answer;
 }
-console.log(longestString(array));
+console.log(longestString(array1));
+
+
+// -------------------------------------------------------
+// Ex 7: 
+
+// Create an arrow function named: 'sort' that sorts an array of numbers in ascending order:
+
+// Usage: 
+
+let n = [1, 3, 6, 3, 6, 10];
+
+const sort = (n) => {
+    let sortedArray= n.sort(function(a,b) {
+    return a - b;});
+return sortedArray;
+}
+
+
+console.log(sort(n));
+
+// // ---------------------------------------
+// EX 8
+// Create an arrow function named: 'countWords' that counts the number of words for this string: 
+
+Usage:
+
+let words = "Count the words in this string"; 
+
+
+console.log(countWords(words));
+
+
