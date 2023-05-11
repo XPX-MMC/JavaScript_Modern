@@ -47,8 +47,8 @@ Create an arrow function called `interleave` that accepts two arrays and interle
 Usage #1:
 ```
 const array1 = [1, 2, 3, 4, 5];
-const array2 = ['a', 'b', 'c', 'd', 'e'];
-console.log(interleave(array1, array2));
+    const array2 = ['a', 'b', 'c', 'd', 'e'];
+    console.log(interleave(array1, array2));
 ```
 
 Output:
