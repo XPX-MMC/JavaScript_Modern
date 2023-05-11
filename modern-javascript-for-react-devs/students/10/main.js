@@ -32,7 +32,7 @@ const ex4 = () =>
 }
 const ex5 = () =>
 {
-    let str = "Tommorrow is never Today Today is never Tommorrow Yesterday is never Today"
+    let str = "Tommorrow is never Today. Today is never Tommorrow. Yesterday is never Today."
     let word = "Today"
     //let str = "Today is a this is a this is a test"
     //let word = "this"
@@ -98,13 +98,13 @@ const palindrome = (passedString) =>
 }
 const theNumberOfTimes = (passedString, word) =>
 {
-let taKeOutWhiteSpaces = passedString.toLowerCase().split(' ')
+let taKeOutWhiteSpaces = passedString.toLowerCase().replace(/[^\w\s]|_/g, " ").split(' ')
 let countWord = 0; 
-console.log(taKeOutWhiteSpaces);
+//console.log(taKeOutWhiteSpaces);
 let i = 0;
 while (i < taKeOutWhiteSpaces.length)
 {
-    //console.log(taKeOutWhiteSpaces.length)
+   // console.log(taKeOutWhiteSpaces.length)
     if (taKeOutWhiteSpaces[i] === word.toLowerCase())
     {
         //console.log(taKeOutWhiteSpaces[i], i)
