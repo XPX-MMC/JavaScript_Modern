@@ -84,4 +84,4 @@ console.log(interleave(array1, array2)); // Output: [1, 'a', 2, 'b', 3, 'c']
 //     ex1();
 // }
 
-// main();
+main();
