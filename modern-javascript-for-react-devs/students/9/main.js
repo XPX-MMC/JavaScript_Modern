@@ -25,6 +25,10 @@ const ex4 = () => {
     //TODO...
 }
 
+const ex5 = () => {
+
+}
+
 //
 // Your functions here...
 //
@@ -88,11 +92,16 @@ const palindrome = (string) => {
 
 //Exercise 5
 
+let str = "today this is a this is a this is a test.";
+console.log(str.split("this").length -1);
+
+
 const main = async () => {
     //ex1();
     // ex2();
     // ex3();
     // ex4()
+       ex5()
 }
 
 
