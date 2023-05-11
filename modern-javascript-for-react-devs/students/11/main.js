@@ -36,7 +36,7 @@ console.log(palindrome('month'));
 //
 // Your functions here...
 //
-const palindrome = (word) => {
+const palindrome = (word) => { 
 
         for (let i=0; i < word.length; i++) 
 
