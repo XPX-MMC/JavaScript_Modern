@@ -48,6 +48,7 @@ const ex3 = () => {
 			console.log(interArray.join(''));
 		}
 	};
+
 	// Test Case 1
 	// const array1 = [1, 2];
 	// const array2 = ['a', 'b', 'c', 'd', 'e'];
@@ -60,13 +61,32 @@ const ex3 = () => {
 	interleave(array1, array2);
 };
 
-// const ex4 = () => {
-// 	const palindrome = (str) = {
-		
-// 	};
+const ex4 = () => {
+	const palindrome = (str) => {
+		// convert the str param into an array
+		let workingArr = [...str];
 
-// 	palindrome(str);
-// };
+		// setting default result to be true
+		let result = true;
+
+		// Iterating over the workingArr, checking it it is not odd, and comparing each item woth its key pair
+		for (let i = 0; i < workingArr.length / 2; i++) {
+			if (workingArr[i] !== workingArr[workingArr.length - i - 1]) {
+				result = false;
+			}
+		}
+
+		console.log(result);
+	};
+
+	// Test Case 1
+	// const string = 'radar';
+
+	// Test Case 2
+	const string = 'month'
+
+	palindrome(string);
+};
 
 // Call your exercise Functions here------------------------------------
 
@@ -74,7 +94,7 @@ const main = async () => {
 	ex1();
 	ex2();
 	ex3();
-	// ex4();
+	ex4();
 };
 
 main();
