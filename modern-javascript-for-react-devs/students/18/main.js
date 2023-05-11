@@ -1,6 +1,6 @@
 //
 // File: main.js
-// Date: 5/09/2023
+// Date: 5/11/2023
 //
 
 const ex1 = () => {
@@ -83,9 +83,27 @@ const ex4 = () => {
 	// const string = 'radar';
 
 	// Test Case 2
-	const string = 'month'
+	const string = 'month';
 
 	palindrome(string);
+};
+
+const ex5 = () => {
+	const countRepeats = (str) => {
+		let strArr = str.split(' ')
+		let testWord = 'this'
+		let counter = 0;
+
+		strArr.forEach(element => {
+			if (element == testWord){
+				counter++;
+			}
+		});
+
+		console.log(testWord + ' appears: ' + counter + ' times');
+	};
+
+	countRepeats('today this is a this is a this is a test.');
 };
 
 // Call your exercise Functions here------------------------------------
@@ -95,6 +113,7 @@ const main = async () => {
 	ex2();
 	ex3();
 	ex4();
+	ex5();
 };
 
 main();
